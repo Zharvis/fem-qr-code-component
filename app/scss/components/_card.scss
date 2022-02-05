@@ -4,32 +4,42 @@
 .card {
   background-color: var(--clr-white);
   position: relative;
-  top: toRem(150);
-  width: toRem(500);
+  top: 50%;
+  transform: translateY(-50%);
+  width: toRem(320);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: toRem(40);
-  border-radius: toRem(15);
+  padding: toRem(16);
+  border-radius: toRem(16);
+  text-align: center;
+  box-shadow: 0 0 toRem(32) toRem(-16) rgba(0, 0, 0, 0.35);
 
   &__qrcode {
-    width: 95%;
     img {
       max-width: 100%;
-      border-radius: toRem(15);
+      border-radius: toRem(16);
     }
+    margin-bottom: toRem(12);
   }
 
   &__title {
     max-width: 100%;
     color: var(--clr-darkblue);
     font-weight: 700;
+    padding: 0 toRem(16);
+    font-size: toRem(15);
+    h2 {
+      margin-bottom: toRem(12);
+    }
   }
 
   &__description {
     max-width: 100%;
     color: var(--clr-grayishblue);
     font-weight: 400;
+    padding: 0 toRem(16);
+    margin-bottom: toRem(18);
   }
 }
