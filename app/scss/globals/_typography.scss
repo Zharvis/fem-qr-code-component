@@ -1,9 +1,12 @@
+@use "../util" as *;
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-top: 0;
 }
 
@@ -15,4 +18,7 @@ a:active {
 
 .container {
   font-family: var(--font-primary);
+  p {
+    font-size: toRem(15);
+  }
 }
